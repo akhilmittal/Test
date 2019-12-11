@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Student Web viewer";
+}
+<div class="container">
+
+<div id="sel_stu">
+    <h3>You have selected </h3>
+    <label style="margin:15px; font-weight:bold;">Id:</label><label id="Id"></label>
+    <br /><label style="margin:8px; font-weight:bold;">Name:</label><label id="Name"></label>
+    <br /><label style="margin:8px; font-weight:bold;">Age:</label><label id="Age"></label>
+    <br /><label style="margin:8px; font-weight:bold;">Course:</label><label id="Course"></label>
+    <br /><label style="margin:8px; font-weight:bold;">Marks:</label><label id="Marks"></label>
+    <br /><label style="margin:8px; font-weight:bold;">EnrollDate:</label><label id="EnrollDate"></label>
+    <br /><label style="margin:8px; font-weight:bold;">CreatedDate:</label><label id="CreatedDate"></label>
+    <br /><label style="margin:8px; font-weight:bold;">ModifiedDate:</label><label id="ModifiedDate"></label>
+</div>
+<div id="grid">  
+    
+</div>  
+<input type="hidden" value="@Url.Content("~/")" id="baseURL" />
+    </div>
+<script src="~/Scripts/Student.js"></script>
+<script>
+    $(document).ready(function () {
+        var oStudent = new student();
+        oStudent.getAll();
+
+        $("#grid").on("click",".view",function () {
+            var id = $(this).data("id");
+            oStudent.getById(id);
+        });
+    });
+</script>

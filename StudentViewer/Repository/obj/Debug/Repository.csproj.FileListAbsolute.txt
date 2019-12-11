@@ -1,0 +1,7 @@
+D:\projects\StudentViewer\Repository\bin\Debug\Repository.dll.config
+D:\projects\StudentViewer\Repository\bin\Debug\Repository.dll
+D:\projects\StudentViewer\Repository\bin\Debug\Repository.pdb
+D:\projects\StudentViewer\Repository\bin\Debug\EntityFramework.dll
+D:\projects\StudentViewer\Repository\bin\Debug\EntityFramework.xml
+D:\projects\StudentViewer\Repository\obj\Debug\Repository.dll
+D:\projects\StudentViewer\Repository\obj\Debug\Repository.pdb
